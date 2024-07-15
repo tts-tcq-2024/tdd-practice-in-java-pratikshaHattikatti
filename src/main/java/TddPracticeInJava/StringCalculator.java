@@ -10,6 +10,17 @@ public class StringCalculator{
         return 0;
       }
 
+    inputNumbers = inputNumbers.replace ("\n",",");
+
+    String[] numbers = inputNumbers.split(",");
+
+    for(String inputN : numbers){
+      if(!inputN.isEmpty()){
+        total += Integer.parseInt(inputN.trim());
+      }
+    }
+    return total;
+
     
   }
 
