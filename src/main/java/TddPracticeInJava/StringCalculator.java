@@ -27,9 +27,5 @@ public class StringCalculator{
     
   }
 
-  private static boolean isAlphanumeriac( String inputStr){
-    return inputStr.matches("[a-zA-Z0-9]*");
-  }
-  
 
 }
