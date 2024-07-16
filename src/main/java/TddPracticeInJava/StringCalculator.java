@@ -7,7 +7,8 @@ public class StringCalculator{
    if (isEmptyString(str) || str == "0") {
             return 0;
         }
-    int total =  verifytoAdd(inputNumbers);
+    int total =  -1;
+    total = verifytoAdd(inputNumbers);
     
    return total;
   }
@@ -21,6 +22,7 @@ return false;
 }
 
 protected static  verifytoAdd(String inputNumbers){
+  
    inputNumbers = inputNumbers.replace ("\n",",");
     inputNumbers = inputNumbers.replace("[^\\d,]",",");  
     String[] numbers = inputNumbers.split(",");
