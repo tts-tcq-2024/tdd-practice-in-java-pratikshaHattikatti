@@ -28,8 +28,9 @@ private static int verifytoAdd(String inputNumbers){
     String[] numbers = inputNumbers.split(",");
     int total = 0;
     for(String inputN : numbers){
-      if(inputN <= 1000){
-        total += Integer.parseInt(inputN.trim());
+      int num = Integer.parseInt(inputN.trim());
+      if(num <=1000)){
+        total += num;
       
       } 
     }
