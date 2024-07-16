@@ -13,8 +13,8 @@ public class StringCalculator{
    return total;
   }
 
-}
- protected static boolean isEmptyString(String inputNumbers) {  
+
+protected static boolean isEmptyString(String inputNumbers) {  
 if(inputNumbers == null || inputNumbers.isEmpty){
         return true;
       }
@@ -35,6 +35,6 @@ protected static  verifytoAdd(String inputNumbers){
     }
     return total;
   }
-
+}
 
 
