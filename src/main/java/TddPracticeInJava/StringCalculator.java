@@ -4,7 +4,7 @@ public class StringCalculator{
 
   public static int add( String inputNumbers){
    
-   if (isEmptyString(str) || str == "0") {
+   if (isEmptyString(inputNumbers) || inputNumbers == "0") {
             return 0;
         }
     int total =  -1;
