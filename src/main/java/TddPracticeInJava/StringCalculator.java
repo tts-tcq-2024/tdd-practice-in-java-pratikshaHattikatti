@@ -14,8 +14,8 @@ public class StringCalculator{
   }
 
 
-private static boolean isEmptyString(String inputNumbers) {  
-if(inputNumbers == null || inputNumbers.isEmpty){
+private static boolean isEmptyString(String inputNumber) {  
+if(inputNumber == null || inputNumber.isEmpty()){
         return true;
       }
 return false;
