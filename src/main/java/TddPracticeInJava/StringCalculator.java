@@ -21,12 +21,12 @@ if(inputNumbers == null || inputNumbers.isEmpty){
 return false;
 }
 
-protected static  verifytoAdd(String inputNumbers){
+protected static int verifytoAdd(String inputNumbers){
   
    inputNumbers = inputNumbers.replace ("\n",",");
     inputNumbers = inputNumbers.replace("[^\\d,]",",");  
     String[] numbers = inputNumbers.split(",");
-    int total = 0
+    int total = 0;
     for(String inputN : numbers){
       if(inputN < 1000){
         total += Integer.parseInt(inputN.trim());
