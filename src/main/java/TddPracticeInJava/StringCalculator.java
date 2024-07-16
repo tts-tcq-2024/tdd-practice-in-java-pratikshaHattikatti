@@ -14,21 +14,21 @@ public class StringCalculator{
   }
 
 
-protected static boolean isEmptyString(String inputNumbers) {  
+private static boolean isEmptyString(String inputNumbers) {  
 if(inputNumbers == null || inputNumbers.isEmpty){
         return true;
       }
 return false;
 }
 
-protected static int verifytoAdd(String inputNumbers){
+private static int verifytoAdd(String inputNumbers){
   
    inputNumbers = inputNumbers.replace ("\n",",");
     inputNumbers = inputNumbers.replace("[^\\d,]",",");  
     String[] numbers = inputNumbers.split(",");
     int total = 0;
     for(String inputN : numbers){
-      if(inputN < 1000){
+      if(inputN <= 1000){
         total += Integer.parseInt(inputN.trim());
       
       } 
