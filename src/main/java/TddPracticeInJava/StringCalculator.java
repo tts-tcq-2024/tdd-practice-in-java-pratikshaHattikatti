@@ -29,7 +29,7 @@ private static int verifytoAdd(String inputNumbers){
     int total = 0;
     for(String inputN : numbers){
       int num = Integer.parseInt(inputN.trim());
-      if(num <=1000)){
+      if(num <=1000){
         total += num;
       
       } 
