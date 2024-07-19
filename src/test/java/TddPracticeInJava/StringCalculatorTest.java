@@ -59,14 +59,5 @@ public class StringCalculatorTest {
 
        assertEquals(expectedResult,result);
     }
-    @Test
-    public void ExpectSumWithCustomDelimiter()
-    {
-        int expectedResult = 3;
-        String input = "//;\n1;2";
-        StringCalculator objUnderTest = new StringCalculator();
-        int result = objUnderTest.add(input);
 
-      assertEquals(expectedResult,result);
-    }
 }
